@@ -8,4 +8,3 @@ def solution(phone_book):   #phone_book은 1000000이하 길이의 배열
                 return answer
     answer = True
     return answer
-
