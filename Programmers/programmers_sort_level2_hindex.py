@@ -8,14 +8,3 @@ H-지수 구하는 방법
 """
 
 
-def solution(citations):
-    citations.sort(reverse=True)
-    n = len(citations)  # clen = 과학자가 발표한 논문 수. n편.
-    answer = 0
-    for i in range(0, n):
-        if i >= citations[i]:
-            answer = i
-            break
-        answer = i + 1      # break문으로 안끝날떄. [2,2]와 같은 반례.
-
-    return answer
